@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        
+        <title>Ben Bridge portfolio</title>
+
+                <style>
+                body {
+                        background-color:white;
+                        color: black;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 25px;
+                        padding-right: 120px;
+                        padding-left:50px;
+                }
+
+                body.header{
+                      position: fixed;
+
+                    }
+                    .header{
+                    font-size: 35px;
+                    margin-top:10px;
+                        outline: round;
+                    }
+                    
+                    
+                    
+                a:link {
+                    color: darkslategray;
+                }
+
+                div{
+                    text-align: center;
+                    margin-top:-70px;
+                
+                }
+                 
+                .main-text{
+                  outline:solid;
+                  outline-offset:15px;
+                  outline-color: darkslategray;
+                  width:100%;
+                    }
+                
+                nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom:100px;
+                width:100%;
+                height:100%;
+                }
+                
+                
+                .nav-links{
+                flex:1;
+                text-align: right;
+                    }
+                    
+                .nav-links ul li{
+                list-style: none;
+                display: inline-block;
+                padding: 8px 12px;
+                position:relative;
+                }    
+                    
+                .nav-links ul li a{
+                    text-decoration: none;
+                    color: black;
+                    border: 3px solid;
+                    border-radius: 25px;
+                    border-color: darkslategray;
+                    padding: 12px 20px;
+                    }
+                    
+                .nav-links ul li a:hover{
+                        background-color: darkslategray;
+                        transition: 1s;
+                        color: white;
+                    }
+                    
+
+                    .dropdown {
+                        position: relative;
+                        display: inline-block;
+                        cursor: pointer;
+                      }
+
+                      /* Styling for the dropdown menu */
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #f9f9f9;
+                            min-width: 170px; /* Increase the width */
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            padding: 12px 16px;
+                            z-index: 1;
+                            margin-top: 10px;
+                        }
+
+
+                      /* Resetting the border for list items */
+                      .dropdown-content ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                      }
+
+                      /* Styling for list items */
+                      .dropdown-content li {
+                        padding: 8px 0;
+                      }
+                    
+                                .dropdown-content li a{
+                                border:none !important;
+                            }
+                    
+                                .nav-links ul li .dropdown {
+                                text-decoration: none;
+                                color: black;
+                                border: 3px solid;
+                                border-radius: 25px;
+                                border-color: darkslategray;
+                                padding: 12px 20px;
+                            }
+
+                                .nav-links ul li .dropdown:hover {
+                                    background-color: darkslategray;
+                                    transition: 1s;
+                                    color: white;
+                                                }
+                    
+ /* OLD code, but useful. Was a button in middle of Homepage screen                  
+                .text-box p{
+                    margin: 2px 0 50px;
+                    font-style: italic;
+                    }
+
+
+                .text-box{
+                    border-bottom: none;
+                    padding: 5px;
+                    margin: 2px;
+                    margin-left: 40px;
+                    margin-right: 80px;
+                    margin-top: 80px;
+                    text-align: center;
+                    border-color: darkslategray;
+                    }
+                    
+                    .github-btn{
+                        display: inline-block;
+                        text-decoration: none;
+                        border: 1px solid;
+                        border-color: darkslategray;
+                        padding: 12px 34px;
+                        margin-top: -100px;
+                        font-size: 20px;
+                        color: black;
+                        background: transparent;
+                        position: relative;
+                        cursor: pointer;
+                        border-radius: 25px;
+                    }
+                    
+                    .github-btn:hover{
+                        background-color: darkslategray;
+                        transition: 1s;
+                        color: white;
+                    }
+                    
+*/                    
+                    
+                    .fa-solid {
+                        display: none;
+                    }
+                    
+                    
+                    .visual{
+                    margin-top: 200px;
+                    margin-left:80px;
+                    display: flex;
+                    justify-content: center;    
+                    }
+                    
+                    .visual-col{
+                        margin: 0 175px;
+                        position: relative;
+                    }
+
+  
+                    space{
+                        width:1000px;
+                        height:100%;
+                    }
+                    
+                   /* .layer {
+                        position: absolute;
+                        top: 0px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        text-align: center;
+                        white-space: nowrap;
+                    } */
+
+/* Phone styling*/
+
+                    @media(max-width: 700px){
+                        .header {
+                            font-size: 27px;
+                            margin-left: -10px;
+                            margin-top: 20px;
+                            position: static;
+                            text-align: center; /* Center-align the header */
+                        }
+ .nav-links ul li {
+        display: block;
+        margin-bottom: 10px;
+        white-space: nowrap;
+        margin-left:-35px;
+    }
+
+    .nav-links ul li a {
+        font-size: 19px;
+        color:white;
+
+    }
+
+    .nav-links {
+        position: fixed;
+        background-color: darkslategray;
+        height: 100vh;
+        width: 180px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+                        
+                        
+                    div{margin: 6px;
+                    text-align: center;
+                    margin-top:-70px;
+                    font-size: 19px;
+                } 
+                    .main-text{
+                      outline:solid;
+                      outline-offset:15px;
+                      outline-color: darkslategray;
+                      width:100%;
+                        }
+                    
+                    .fa-xmark {
+                        display: block;
+                        color:white;
+                        font-size:20px;
+                        cursor:pointer;
+                        margin-left:-15px;
+                    }                   
+
+                        .fa-bars{
+                        display:block;
+                        position: absolute;
+                        right: 45px;
+                        top:75px;
+                        }
+                        
+                        .visual {
+                            flex-direction: column;
+                            align-items: center;
+                            margin-top:250px;
+                            margin-left:0;
+                        }
+                        
+                        #visual-Image { /* the visualizing data picture is quite big, so we are hiding it if its bigger than the screen you are looking at the website on*/
+                            display: none;
+                        }
+
+                        .visual-col {
+                            margin: 0 auto;
+                            max-width: 100%;
+                            height: auto; 
+                        }
+
+                        .space {
+                            width: 100%;
+                            height: 280px;
+                        } 
+                        
+                      /*  .layer {
+                            position: absolute;
+                            top: -20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            text-align: center;
+                            white-space: nowrap;
+                    }*/
+                        
+     .nav-links ul li .dropdown {
+        border: none;
+        padding: 12px 20px;
+        width: auto;
+         color:white;
+         font-size:19px;
+    }
+
+                        .dropdown-content {
+                            display: none;
+                            position: absolute;
+                            background-color: #f9f9f9;
+                            min-width: 50px;
+                            max-width: 150px;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            padding: 12px 16px;
+                            z-index: 1;
+                            margin-top: 0px;
+                        }
+                        .dropdown-content ul {
+                            list-style-type: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .dropdown-content li {
+                            padding: 8px 0;
+                        }
+                        .dropdown-content li a {
+                            text-decoration: none;
+                            color: black !important; /* Set text color to black */
+                            display: block; /* Ensure the list items are displayed as blocks */
+                            width: 100%; /* Set the width to 100% */
+                        }
+
+                        
+                        }
+                    
+                    
+                    
+                    
+                    @media (max-width: 768px) {
+                        #visualizing-data {
+                            max-width: 100%; /* Ensure the image doesn't exceed the screen width */
+                            display: block;
+                            margin: 0 auto; /* Center the image horizontally */
+                        }
+}
+                    </style>
+    </head>
+
+    <body>
+               
+        <nav>
+            
+            <div class="header">
+        <h1>Ben Bridge: Portfolio</h1>
+        <i class="fa-solid fa-bars"  onclick="showMenu()"></i>        
+    </div>
+                <section class="nav-links" id="navLinks">
+
+            <ul>
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <li><a href="home.html" >Home</a></li>
+                    <li><a href="cv.html" >CV</a></li>
+                        <li>
+                            <div class="dropdown" onclick="toggleDropdown()">Data Projects </div>
+                            <div class="dropdown-content" id="dropdownContent">
+                                <ul>
+                                    <li><a href="project1.html">Project 1</a></li>
+                                    <li><a href="project2.html">Project 2</a></li>
+                                    <li><a href="project3.html">Project 3</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    <li> <a href="https://github.com/benAdambridge"> My Github</a></li>
+                </ul>
+                </section>
+
+                    </nav>
+
+
+
+        
+        <div class="main-text">
+            <p>I am a Data Analyst with extensive experience across the academic, public and charity sectors. I use R, SQL, Power BI and Excel across a range of projects within my work, and outside of work, to tell compelling data stories. Use the navigation bar to view these projects, and my CV.</p>
+
+
+            <p>I created this website using HTML/CSS (see more under 'Data Projects'). If you are interested in any type of coding, I'd advise looking at Harvards free courses <a href="https://pll.harvard.edu/catalog?keywords=cs50"> (CS50 program, also found on Youtube)</a></p>
+
+        </div>
+        
+        <section class="visual">
+            
+            <div class ="row">
+            <div class = "visual-col">
+            <img src="C:/Users/benbr/OneDrive/Documents/council-dashboard.png">
+            <!--<div class="layer">
+                 <h3><b> Mapping data </b></h3>
+                </div>-->
+                </div>
+                </div>
+            <div class="space"></div>
+            <div class="row">
+            <div class = "visual-col">
+            <img id="visualizing-data" src="C:/Users/benbr/OneDrive/Documents/titanic-survival.png">
+            <!--<div class="layer">
+                 <h3><b> Visualizing data </b></h3>
+                </div>-->
+                </div>
+                </div>
+            
+        </section>         
+    
+<!--JavaScript for Toggle/ Navigation Menu -->
+        
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+        </script>    
+
+<!-- Hide 'visualizing data' image if too big for the screen -->
+        
+<script>
+    window.onload = function() {
+        var visualImage = document.getElementById("visualizing-data");
+
+        if (visualImage) {
+            var screenWidth = window.innerWidth; // Get the screen width
+
+            // Check if the screen width is less than or equal to 768
+            if (screenWidth <= 768) {
+                var tabletWidthThreshold = 768;
+                var imageWidth = visualImage.offsetWidth;
+
+                if (imageWidth > tabletWidthThreshold) {
+                    // Calculate the scaling factor
+                    var scaleFactor = tabletWidthThreshold / imageWidth;
+                    
+                    // Apply the scaling to the image width
+                    visualImage.style.width = (scaleFactor * 100) + "%"; //
+
+                    // Center the image horizontally
+                    visualImage.style.marginLeft = "auto";
+                    visualImage.style.marginRight = "auto";
+                }
+            }
+        }
+    }
+</script>   
+        
+        <!--- Drop-down toggle for 'Data Projects' -->
+        
+<script>
+    document.addEventListener("click", function(event) {
+        var dropdownContent = document.getElementById("dropdownContent");
+        var dropdownToggle = document.querySelector(".dropdown");
+
+        if (event.target !== dropdownContent && event.target !== dropdownToggle && !dropdownContent.contains(event.target)) {
+            dropdownContent.style.display = "none";
+        }
+    });
+
+    function toggleDropdown() {
+        var dropdownContent = document.getElementById("dropdownContent");
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    }
+</script>
+        
+    </body>
+</html>
